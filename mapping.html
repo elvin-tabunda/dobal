@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html#home" class="logo">
+            <img src="./images/Logo.jpg" alt="">
+        </a>
+
+        <span class="company__title">Dobal Real Estate Management</span>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav>
+            <ul class="nav">
+                <li>
+                    <a href="index.html#home" onclick="goToSection('home')">Home</a>
+                </li>
+                
+                
+                <li class="dropdown">
+                    
+                    <a href="index.html#service" id="dropdown">Services</a>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <a href="relocation.html" onclick="relocation();">Relocation Survey</a>
+                        <a href="topographic.html" onclick="topographic();">Topographic Survey</a>
+                        <a href="verification.html" onclick="verification();">Verification Survey</a>
+                        <a href="subdivision.html" onclick="subdivision();">Subdivision Survey</a>
+                        <a href="parcellary.html" onclick="parcellary();">Parcellary Survey</a>
+                        <a href="land_development.html" onclick="landDevelopment();">Land Development Survey</a>
+                        <a href="construction.html" onclick="construction();">Construction Layout</a>
+                        <a href="land_tilting.html" onclick="landTilting();">Land Titling Services</a>
+                        <a href="site_development.html" onclick="siteDevelopment();">Site Development Survey</a>
+                        <a href="mapping.html" onclick="mapping();">Mapping Services</a>
+                    </div>
+            
+            </li>
+
+            <li class="dropdown" id="dropdown-about">
+                    
+                <div class="nav-about-dd">
+                    <a href="##" id="dropdown" class="nav-about-dd">About Us <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="nav-dd">
+                        <a href="proprietor.html">The Proprietor</a>
+                        <a href="companyProfile.html" class="nav-dd-items">Company Profile</a>
+                        <a href="organizationalChart.html" class="nav-dd-items">Organizational Chart</a>
+                    </div>
+                    
+                </div>
+                    
+                    <div class="about-dd" id="about-dd">
+                        <div class="about-child">
+                            <a href="#">The Proprietor</a>
+                            <a href="companyProfile.html">Company Profile</a>
+                            <a href="organizationalChart.html">Organizational Chart</a>
+    
+                            
+                        </div>
+                    </div>
+
+                    <div class="dropdown-content" id="dropdown-content">
+                        <a href="#">The Proprietor</a>
+                        <a href="companyProfile.html">Company Profile</a>
+                        <a href="organizationalChart.html">Organizational Chart</a>
+                    </div>
+               
+            </li>
+                <li>
+                    <a href="index.html#contact" onclick="goToSection('contact')">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
