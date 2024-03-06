@@ -1586,13 +1586,13 @@ hr {
         rotate: 90deg;
     }
 
-    .map-container #map {
+    .map-container iframe {
         width: 650px;
     }
 }
 
 @media only screen and (max-width: 575px) {
-    #map {
+    iframe {
         width: 350px;
         height: 350px;
     }
@@ -1902,7 +1902,7 @@ hr {
     .input-fields textarea {
         width: 350px;
       }
-      .map-container #map {
+      .map-container iframe {
         width: 350px;
       }
       .email-us-icon i {
