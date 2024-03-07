@@ -986,7 +986,7 @@ hr {
     gap: 10px;
 }
 .parentReed {
-    flex: 9;
+    flex: 4;
 }
 .reed {
     display: grid;
