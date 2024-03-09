@@ -986,7 +986,7 @@ hr {
     gap: 10px;
 }
 .parentReed {
-    flex: 4;
+    flex: 9;
 }
 .reed {
     display: grid;
@@ -1162,7 +1162,7 @@ hr {
 
 .company__header {
     background-color: #E5D9B6;
-    width: 600px;
+    width: 1000px;
     z-index: 2;
     position: absolute;
     display: flex;
@@ -1606,6 +1606,11 @@ hr {
     header .nav.active {
         top: 100px;
         height: auto;
+        text-align: left;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
     }
 
     header .company__title {
@@ -1793,12 +1798,6 @@ hr {
         margin-right: 0px;
     }
 
-    .dropdown:hover .dropdown-content {
-        opacity: 0;
-        visibility: hidden;
-        animation: none; /* Disable animation on small screens */
-        
-    }
 
     .carousel-item img{
         width: 350px;
@@ -1822,9 +1821,6 @@ hr {
         margin-top: 50px;
     }
 
-    .about-dd {
-        display: none;
-    }
    
     .online-survery-quote-header h1 {
         margin-top: 120px;
@@ -1836,13 +1832,14 @@ hr {
     }
 
     /* COMPANY PROFILE*/
-
+    
     .company__header h1{
         width: 300px;
         font-size: 2rem;
     }
     .company__content {
         flex-direction: column;
+        margin-top: 100px;
     }
     .company__logo {
         margin-bottom: 50px;
@@ -1866,21 +1863,12 @@ hr {
         margin-top: 200px;
     }
     
-    .nav-dd {
-        display: none;
-        background-color: rebeccapurple;
-    }
+    
     .nav-dd a {
         margin-left: 100px;
         font-size: 1rem;
     }
-    .nav-about-dd:hover .nav-dd {
-        display: block;
-    }
-
-    .nav-service-dd:hover .nav-dd {
-        display: block;
-    }
+    
     .second__grade__container {
         flex-direction: column;
     }
@@ -2029,5 +2017,10 @@ hr {
         flex-direction: column;
         margin-left: 15px;
     }
-
+    .about-child a {
+        margin-left: 50px;
+    }
+    .about-dd, #about-dd {
+        display: none;
+    }
 }   
