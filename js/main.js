@@ -1,6 +1,21 @@
 let menu = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".nav");
 let exit = document.querySelector('#exit');
+let serviceCLick = document.getElementById('serviceCLick');
+
+const aboutDD = () => {
+  const aboutDropdown = document.getElementById("about-dd");
+  if (window.innerWidth <= 575) {
+      aboutDropdown.style.display = (aboutDropdown.style.display === "block") ? "none" : "block";
+  }
+};
+
+document.getElementById("dropdown-about").addEventListener("click", () => {
+  if (window.innerWidth <= 575) {
+      aboutDD();
+  }
+});
+
 
 menu.addEventListener('click', function() {
     navbar.classList.toggle("active");
@@ -12,7 +27,16 @@ exit.addEventListener('click', function () {
   navbar.classList.remove("active");
   exit.style.display = 'none';
   menu.style.display = 'block';
-})
+});
+
+serviceCLick.addEventListener('click', function () {
+  exit.style.display = 'none';
+  menu.style.display = 'block';
+  window.location.href = 'index.html#service'
+});
+
+
+
 
 
 
@@ -633,7 +657,7 @@ const surveytype = () => {
                   // var s_lot_area = document.getElementById('cs_s_lot_area').value;
                   // var s_num_corner = document.getElementById('cs_s_num_corner').value;
                   var num_sub_divided = document.getElementById('cs_num_sub_divided').value;
-
+                  
                   cs_c_get_total_ex();
                   check(num_consolidated);
                   check(cs_c_get_total_ex());
