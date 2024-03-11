@@ -3,6 +3,11 @@ let navbar = document.querySelector(".nav");
 let exit = document.querySelector('#exit');
 let serviceCLick = document.getElementById('serviceCLick');
 
+
+const onlineEstimate = () => {
+  window.location.href = 'onlineEstimate.html';
+}
+
 const aboutDD = () => {
   const aboutDropdown = document.getElementById("about-dd");
   if (window.innerWidth <= 575) {
@@ -29,25 +34,6 @@ exit.addEventListener('click', function () {
   menu.style.display = 'block';
 });
 
-serviceCLick.addEventListener('click', function () {
-  exit.style.display = 'none';
-  menu.style.display = 'block';
-  window.location.href = 'index.html#service'
-});
-
-
-
-
-
-
-window.onscroll = () => {
-    navbar.classList.remove("active");
-}
-
-// Redirect to Online Estimate Page
-const onlineEstimate = () => {
-    window.location.href = 'onlineEstimate.html';
-}
 
 const topographic = () => {
   window.location.href = 'topographic.html';
