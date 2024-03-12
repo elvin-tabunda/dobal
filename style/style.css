@@ -1553,6 +1553,13 @@ hr {
 .nav-about-dd i{
     display: none;
 }
+.techtech_main {
+    height: 400px;
+}
+
+.techtech {
+    top: 20%;
+}
 
 @media only screen and (max-width: 1140px) {
     
@@ -2127,5 +2134,8 @@ hr {
     }
     .nav-about-dd i{
         display: inline-block;
+    }
+    .techtech_main {
+        height: 600px;
     }
 }   
