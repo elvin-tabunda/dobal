@@ -60,7 +60,6 @@ header {
     color: var(--main-color);
     font-size: 3rem;
     font-weight: 600;
-    margin-left: -100px;
 }
 /* DROPDOWN */
 /* Add your existing styles here */
@@ -95,6 +94,9 @@ header {
 }
 
 .about-dd {
+    display: none;
+}
+.tech-dd {
     display: none;
 }
 
@@ -1474,10 +1476,83 @@ hr {
     opacity: 0.5;
 }
 
+.tech_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.tech_header_img {
+    width: auto;
+}
+.tech_header_img img {
+    width: 100%;
+    height: 700px;
+}
 
+.tech_content_container {
+    position: absolute;
+    background-color: #fff;
+    max-width: 1000px;
+    height: 800px;
+    width: 100%;
+    top: 90%;
+}
 
+.tech_header_title_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background-color: #332FD0;
+}
 
+.tech_content {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.grx3 img{
+    margin-top: 50px;
+    width: 300px;
+    height: 200px;
+}
+.grx3_description p {
+    color: #54595f;
+    max-width: 600px;
+    width: 100%;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.plokers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    width: 100%;
+    margin-left: 200px;
+}
+
+.ploks img {
+    max-width: 150px;
+    height: 150px;
+    width: 100%;
+}
+.tech_main {
+    margin-top: 100px;
+    height: 1000px;
+    margin-bottom: 500px;
+}
+
+.nav-about-dd i{
+    display: none;
+}
 
 @media only screen and (max-width: 1140px) {
     
@@ -1779,6 +1854,9 @@ hr {
 
     .footer-bottom p {
         margin-bottom: 0px;
+        padding-inline: 20px;
+        text-align: center;
+        font-size: 12px;
     }
 
     .parcellary h1 {
@@ -2020,7 +2098,34 @@ hr {
     .about-child a {
         margin-left: 50px;
     }
+    .tech-child a {
+        margin-left: 50px;
+    }
     .about-dd, #about-dd {
         display: none;
+    }
+    .tech-dd, #tech-dd {
+        display: none;
+    }
+
+    /*  */
+
+    
+    .tech_header_img img{
+        height: 300px;
+    }
+    .tech_content_container {
+        top: 35%;
+        height: auto;
+    }
+
+    .tech_content {
+        padding: 20px;
+    }
+    .plokers {
+        margin-left: 30px;
+    }
+    .nav-about-dd i{
+        display: inline-block;
     }
 }   
