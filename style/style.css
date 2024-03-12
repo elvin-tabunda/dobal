@@ -2131,6 +2131,7 @@ hr {
     }
     .plokers {
         margin-left: 30px;
+        gap: 10px;
     }
     .nav-about-dd i{
         display: inline-block;
