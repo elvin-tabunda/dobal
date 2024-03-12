@@ -1,12 +1,24 @@
 let menu = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".nav");
 let exit = document.querySelector('#exit');
-let serviceCLick = document.getElementById('serviceCLick');
 
 
 const onlineEstimate = () => {
   window.location.href = 'onlineEstimate.html';
 }
+
+const techDD = () => {
+  const techDropdown = document.getElementById('tech-dd');
+  if (window.innerWidth <= 575) {
+    techDropdown.style.display = (techDropdown.style.display === "block") ? "none" : "block";
+  }
+}
+
+document.getElementById("dropdown-tech").addEventListener('click', () => {
+  if (window.innerWidth <= 575) {
+    techDD();
+  }
+})
 
 const aboutDD = () => {
   const aboutDropdown = document.getElementById("about-dd");
@@ -33,6 +45,7 @@ exit.addEventListener('click', function () {
   exit.style.display = 'none';
   menu.style.display = 'block';
 });
+
 
 
 const topographic = () => {
