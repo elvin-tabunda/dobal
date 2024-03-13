@@ -992,7 +992,7 @@ hr {
 }
 .reed {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
     align-items: center;
     margin-top: 10px;
@@ -1026,6 +1026,7 @@ hr {
 }
 .org_profile_info h5 {
     font-size: 19px;
+    font-weight: 600;
 }
 .org_profile_info p {
     font-size: 13px;
@@ -2140,6 +2141,6 @@ hr {
         height: 600px;
     }
     .techtech {
-        top: 15%;
+        top: 10%;
     }
 }   
