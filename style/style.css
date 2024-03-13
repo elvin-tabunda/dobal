@@ -1906,7 +1906,9 @@ hr {
     .contact-form {
         margin-top: 50px;
     }
-
+    .reedHeader h4 {
+        font-size: 1.2rem;
+    }
    
     .online-survery-quote-header h1 {
         margin-top: 120px;
