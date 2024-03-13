@@ -44,6 +44,12 @@ exit.addEventListener('click', function () {
   navbar.classList.remove("active");
   exit.style.display = 'none';
   menu.style.display = 'block';
+
+  const techDropdown = document.getElementById('tech-dd');
+  const aboutDropdown = document.getElementById('about-dd');
+
+  techDropdown.style.display = 'none';
+  aboutDropdown.style.display = 'none';
 });
 
 
