@@ -2145,4 +2145,12 @@ hr {
     .techtech {
         top: 15%;
     }
-}   
+}
+
+@media only screen and (max-width: 375px) {
+    header .company__title {
+        font-size: 23px;
+        margin-left: 10px;
+
+    }
+}
