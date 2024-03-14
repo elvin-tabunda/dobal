@@ -53,6 +53,21 @@ exit.addEventListener('click', function () {
 });
 
 
+function resetNavigation(event) {
+  if (!navbar.contains(event.target) && event.target !== menu && event.target !== exit) {
+      navbar.classList.remove("active");
+      exit.style.display = 'none';
+      menu.style.display = 'block';
+      
+      const techDropdown = document.getElementById('tech-dd');
+      const aboutDropdown = document.getElementById("about-dd");
+      
+      techDropdown.style.display = 'none';
+      aboutDropdown.style.display = 'none';
+  }
+}
+document.body.addEventListener('touchstart', resetNavigation);
+
 
 const topographic = () => {
   window.location.href = 'topographic.html';
