@@ -940,23 +940,23 @@ hr {
 }
 
 .big_three_position {
-    max-width: 900px;
+    max-width: 1200px;
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+    
 }
 .big_three_profile {
     display: flex;
     align-items: center;
     padding: 10px;
+    width: 100%;
 }
 .big_two {
     display: flex;
     gap: 10px;
-    max-width: 900px;
     width: 100%;
 }
 .department_container {
@@ -2067,7 +2067,7 @@ hr {
       .exit i {
         font-size: 2rem;
         position: absolute;
-        top: 30px;
+        top: -70px;
         right: 7%;
       }
       .all_services_header_text h2 {
