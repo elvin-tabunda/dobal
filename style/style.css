@@ -1702,6 +1702,10 @@ hr {
         font-size: 25px;
         margin-left: 10px;
     }
+    .nav a {
+        padding: 0.7rem;
+        display: block;
+    }
 
     .carousel-container {
         width: 400px;
